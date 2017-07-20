@@ -1,7 +1,7 @@
 ![Image](/image/banner.png)
 
 # Matisse
-[![](https://jitpack.io/v/ARMIN-KAMYAB/Matisse.svg)](https://jitpack.io/#ARMIN-KAMYAB/Matisse)
+[![Build Status](https://travis-ci.org/zhihu/Matisse.svg)](https://travis-ci.org/zhihu/Matisse)  
 Matisse is a well-designed local image and video selector for Android. You can  
 - Use it in Activity or Fragment
 - Select images including JPEG, PNG, GIF and videos including MPEG, MP4 
