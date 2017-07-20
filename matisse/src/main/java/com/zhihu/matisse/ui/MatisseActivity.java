@@ -15,6 +15,7 @@
  */
 package com.zhihu.matisse.ui;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -83,6 +84,10 @@ public class MatisseActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         // programmatically set theme before super.onCreate()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+        }
         mSpec = SelectionSpec.getInstance();
         setTheme(mSpec.themeId);
         super.onCreate(savedInstanceState);
